@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+       <!-- Tailwind CDN + DaisyUI CDN-->
+       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+       <script src="https://cdn.tailwindcss.com"></script>
+       <script>
+           tailwind.config = {
+             theme: {
+               extend: {
+                 colors: {
+                   clifford: '#da373d',
+                   'green-btn-dark': '#ABEF5F' ,
+                   'green-btn-light': 'rgba(171, 239, 95, 0.5)',
+                   'black': '#1C1C1C',
+                   'border-icon': '#rgba(255, 255, 255, 1)',
+                   'gray': '#737373',
+                 }
+               }
+             }
+           }
+         </script>
+   
+         <!-- Font Awesome -->
+         <script src="https://kit.fontawesome.com/84757c07df.js" crossorigin="anonymous"></script>
+
+        <!-- Font SetUp -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+          }
+    </style>
+
+
 </head>
-<body>
-    
+
+
+<body class= "font-manrope " >
+    <!-- Header -->
+     <header class="lg:container lg:w-[73.125rem] mx-auto bg-gradient-to-r from-[rgba(255, 255, 255, 1)] to-[rgba(255, 255, 255, 0)]">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="navbar bg-base-100 mt-[4vh] px-[1.25rem] lg:px-0 ">
+
+                <div class="navbar-start flex items-center">
+                  <i class="fa-solid fa-arrow-right bg-[#ABEF5F] p-[0.625rem] rounded-[100%] -rotate-45"></i>
+                  <a class="btn btn-ghost font-extrabold text-[2rem] text-[#212121] p-[0.375rem]">Rinterio</a>
+                </div>
+
+                <div class="navbar-center hidden lg:flex lg:mr-[6rem]">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class=" text-[#494949] font-extrabold">Home</a></li>
+                    <li><a class="text-[#737373]">Services</a></li>
+                    <li><a class="text-[#737373]">Portfolio</a></li>
+                    <li><a class="text-[#737373]">Blogs</a></li>
+                    <li><a class="text-[#737373]">Contact Us</a></li>
+                  </ul>
+                </div>
+
+                <div class="navbar-end gap-[15px] flex">
+                  <i class="fa-solid fa-magnifying-glass p-[12px] bg-white border-[#E9E9E9] border-2 rounded-[100%] text-[#737373] hidden lg:block"></i>
+                  <i class="fa-solid fa-cart-shopping p-[12px] bg-white border-[#E9E9E9] border-2 rounded-[100%] text-[#737373] hidden lg:block"></i>
+
+                 <!-- button Div -->
+                  <div class="flex justify-center">
+                 <button class="  bg-[#ABEF5F] pt-[0.6rem] pb-[0.6rem] px-[1.25rem] rounded-l-[1.75rem] rounded-r-[1.75rem] hidden lg:block font-extrabold">
+                    Book Consult
+                    <i class="fa-solid fa-arrow-right bg-[#1C1C1C] text-white p-[0.625rem] rounded-[100%] -rotate-45 ml-[0.43rem] "></i>
+                 </button>
+                </div>
+
+                <!-- Mobile Bar Icon -->
+                <i class="fa-solid fa-bars  lg:hidden p-[0.75rem] bg-white border-[#E9E9E9] border-2 rounded-[100%] text-[#737373]"></i>
+                </div>
+              </div>
+        </nav>
+        <!-- Navigation Bar Done -->
+
+        <!-- Banner Part -->
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="text-center p-4">
+                <center>
+              <img
+                src="assets/banner.png"> </center>
+                <div class="hero-content text-center">
+                    <div>
+                      <h1 class="text-[2rem]  lg:text-[4rem] font-extrabold text-[#212121]">A barn house of this design has a striking appearance</h1>
+                      <p class="text-base  py-4 text-[1rem] text-[#494949]">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                      </p>
+                      <div class=" flex justify-center mt-[0.75rem] lg:mt-[1.7rem]">
+                        <button class="w-[100%] lg:w-auto bg-green-btn-light pt-[0.6rem] pb-[0.6rem] px-[1.25rem] rounded-l-[1.75rem] rounded-r-[1.75rem] font-extrabold">
+                            View Details
+                           <i class="fa-solid fa-arrow-right bg-[#ABEF5F] text-black p-[0.625rem] rounded-[100%] -rotate-45 ml-[0.43rem] "></i>
+                        </button>
+                       </div>
+                    </div>
+                </div>
+          </div>
+         <!-- Banner Part Done -->
+     </header>
+
+
+
+
+     <main>
+        
+     </main>
+
+     <footer></footer>
+
 </body>
+
+
 </html>
