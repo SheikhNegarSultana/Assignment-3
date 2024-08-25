@@ -15,6 +15,7 @@
                    clifford: '#da373d',
                    'green-btn-dark': '#ABEF5F' ,
                    'green-btn-light': 'rgba(171, 239, 95, 0.5)',
+                   'green-btn-light-2': 'rgba(171, 239, 95, 0.2)',
                    'black': '#1C1C1C',
                    'border-icon': '#rgba(255, 255, 255, 1)',
                    'gray': '#737373',
@@ -86,8 +87,7 @@
         <div class="flex items-center justify-center min-h-screen">
             <div class="text-center p-4">
                 <center>
-              <img
-                src="assets/banner.png"> </center>
+              <img src="assets/banner.png" alt=""> </center>
                 <div class="hero-content text-center">
                     <div>
                       <h1 class="text-[2rem]  lg:text-[4rem] font-extrabold text-[#212121]">A barn house of this design has a striking appearance</h1>
@@ -228,7 +228,7 @@
       <section class="lg:bg-white bg-[#F4F4F4] px-[1.25rem] py-[2rem] lg:px-[8.4375rem] lg:pt-[1.4rem] lg:pb-[6.45rem] ">
         <!-- Button Div -->
         <div class="flex justify-center mb-[1rem]"> 
-          <button class=" items-center text-[#494949] bg-green-btn-light py-[0.5rem] px-[1rem] rounded-[1.5rem] font-bold">
+          <button class=" items-center text-[#494949] bg-green-btn-light-2 py-[0.5rem] px-[1rem] rounded-[1.5rem] font-bold">
               <i class="fa-solid fa-arrow-right mr-2"></i>
               Explore our Latest works
           </button>
@@ -249,7 +249,7 @@
 
         <div class="flex-none lg:flex mt-10 gap-7">
 
-          <div class="card bg-base-100 w-100 lg:w-80 shadow-xl mb-12 lg:mb-0">
+          <div class="card flex-1 bg-base-100 w-100 lg:w-80 shadow-xl mb-12 lg:mb-0">
             <div class="card-body">
               <div class="flex gap-2 mb-4">
                 <img src="assets/client-1.jpg" alt="" class="rounded-[100%] w-11 border-b-slate-500 border-2">
@@ -265,7 +265,7 @@
             </figure>
           </div>
 
-          <div class="card bg-base-100 w-100 lg:w-80 shadow-xl mb-12 lg:mb-0 ">
+          <div class="card flex-1 bg-base-100 w-100 lg:w-80 shadow-xl mb-12 lg:mb-0 ">
             <div class="card-body">
               <div class="flex gap-2 mb-4">
                 <img src="assets/client-2.jpg" alt="" class="rounded-[100%] w-11 border-b-slate-500 border-2">
@@ -280,7 +280,7 @@
             </figure>
           </div>
 
-          <div class="card bg-base-100 w-100 lg:w-80 shadow-xl mb-12 lg:mb-0">
+          <div class="card flex-1 bg-base-100 w-100 lg:w-80 shadow-xl mb-12 lg:mb-0">
             <div class="card-body">
               <div class="flex gap-2 mb-4 ">
                 <img src="assets/client-3.jpeg" alt="" class="rounded-[100%] w-11 border-b-slate-500 border-2">
@@ -294,12 +294,60 @@
                 alt="" />
             </figure>
           </div>
-
-
         </div>
       </section>
      <!-- Client Testimonials Section (Special Section) Done-->
      
+     <!-- Discuss Section -->
+      <section class=" bg-[url('assets/bg.jpg')] bg-cover bg-white/50 bg-blend-overlay  px-[1.25rem] py-[2rem] lg:px-[8.4375rem] lg:pt-[1.4rem] lg:pb-[6.45rem] mt-2 ">
+       
+      <div class="flex justify-center mb-[1rem] mt-[6.25rem]"> 
+          <button class=" items-center text-[#494949] bg-green-btn-light-2 py-[0.5rem] px-[1rem] rounded-[1.5rem] font-bold">
+              <i class="fa-solid fa-arrow-right mr-2"></i>
+              Let's Connect
+          </button>
+      </div>
+
+      <h1 class=" font-black text-[#212121] text-[2.5rem] text-center mt-[1rem]">Let's Discuss Next Project</h1>
+      <p class="mt-[1rem] lg:mt-[1.5rem] font-medium text-[#494949] text-[1rem] text-center lg:px-[10rem] mb-[2rem]">Explore the vision behind your next design with us. This barn house showcases a distinctive and captivating appearance. Let's collaborate to bring your unique project ideas to life.</p>
+
+      <!-- Form Fill Up -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+            <input placeholder="First Name*" type="text" id="first-name" class=" border rounded-[4rem] w-full p-[1.25rem] border-[#E9E9E9] ">
+        </div>
+
+        <div>
+            <input placeholder="Last Name*" type="text" id="first-name" class=" border rounded-[4rem] w-full p-[1.25rem] border-[#E9E9E9] ">
+        </div>
+
+        <div>
+            <input placeholder="Phone Number*" type="text" id="first-name" class=" border rounded-[4rem] w-full p-[1.25rem] border-[#E9E9E9] ">
+        </div>
+
+        <div>
+            <input placeholder="Email Number*" type="text" id="first-name" class=" border rounded-[4rem] w-full p-[1.25rem] border-[#E9E9E9] ">
+        </div>
+    </div>
+    
+    <div class="mt-4">
+        <textarea placeholder="Write your message here" id="message" class=" border rounded-[2rem] w-full p-[1.4rem] resize-none h-[15rem] border-[#E9E9E9]"></textarea>
+    </div>
+    <div> 
+
+    <div class="flex justify-center mt-[2rem]">
+      <button class="  bg-[#ABEF5F] pt-[0.6rem] pb-[0.6rem] px-[1.25rem] rounded-l-[1.75rem] rounded-r-[1.75rem]  font-extrabold w-[100%]">
+        Send Mail
+         <i class="fa-solid fa-arrow-right bg-[#1C1C1C] text-white p-[0.625rem] rounded-[100%] -rotate-45 ml-[0.43rem] "></i>
+      </button>
+     </div>
+    
+    </div>
+    
+      <!-- Form Fill Up Done -->
+    
+      </section>
+     <!-- Discuss Section Done-->
      </main>
 
      <footer></footer>
